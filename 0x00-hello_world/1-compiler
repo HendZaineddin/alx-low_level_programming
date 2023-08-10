@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c $CFILE -o ${echo $CFILE | grep *.c | tr "c" "o"}
+gcc -c $CFILE -o ${echo $CFILE | grep main.c | tr "c" "o"}
