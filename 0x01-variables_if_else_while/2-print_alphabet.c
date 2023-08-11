@@ -1,6 +1,6 @@
 #include <stdio.h>
  /**
-  * main - Entry point
+  * main - Entry point pritning
   * Description: print the alphabet in lowercase
   * Return: 0 (sucses).
   */
