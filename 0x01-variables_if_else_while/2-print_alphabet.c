@@ -1,9 +1,9 @@
 #include <stdio.h>
- /**
-  * main - Entry point pritning
-  * Description: print the alphabet in lowercase
-  * Return: 0 (sucses).
-  */
+/**
+ * main - Entry point pritning
+ * Description: print the alphabet in lowercase
+ * Return: 0 (sucses).
+ */
 int main(void)
 {
 	char alphapet;
