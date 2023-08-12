@@ -1,28 +1,28 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
 /**
  * main - Entry point
- * Description: Random numbers and last digit analysis
- * Return: 0 (success)
+ * Description - Generates a random number and prints its sign.
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int n;
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-
-	if (n > 5)
-	{
-	printf("Last digit of %d is %d and is greater than 5\n", n, n % 10);
-	}
-	else if (n == 0)
-	{
-	printf("Last digit of %d is %d and is 0\n", n, n % 10);
-	}
-	else if (n < 6 && n != 0)
-	{
-	printf("Last digit of %d is %d and is less than 6 and not 0\n", n, n % 10);
-	}
-	return (0);
+int n;
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+printf("%d ", n);
+if (n > 0)
+{
+printf("is positive\n");
+}
+else if (n < 0)
+{
+printf("is negative\n");
+}
+else
+{
+printf("is zero\n");
+}
+return (0);
 }
