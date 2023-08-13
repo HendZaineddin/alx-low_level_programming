@@ -10,15 +10,12 @@ int main(void)
 
 	while (alphabet <= 'z')
 	{
-		putchar(alphabet = 'a');
-		alphabet++;
-	}
 	if (alphabet == 'e' || alphabet == 'q')
 	{		alphabet++;
 			putchar(alphabet);
 			alphabet++;
 	}
-
+	}
 		putchar('\n');
 		return (0);
 }
