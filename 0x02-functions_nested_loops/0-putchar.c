@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 /**
  * main -Entry
  * Describtion:  prints _putchar.
@@ -8,7 +8,6 @@
 int main(void)
 {
 
-	int letter;
 
 	{
 	putchar('_');
