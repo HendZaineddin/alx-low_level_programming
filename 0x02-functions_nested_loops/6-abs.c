@@ -10,9 +10,9 @@ int _abs(int k)
 
 	if (k >= 0)
 	{
-		return (0);
+		return (k);
 	}
 	else
-		return (-1);
+		return (-k);
 }
 
