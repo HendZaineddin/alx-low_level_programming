@@ -6,8 +6,12 @@
 
 void print_square(int size)
 {
-for (; size >= 1; size--)
-_putchar('#');
-if (size <= 0)
-_putchar('\n');
+	int H, M;
+
+		for (H = 1; H <= size; H++)
+		{
+		for (M = 1; M <= size; M++)
+		_putchar('#');
+		_putchar('\n');
+		}
 }

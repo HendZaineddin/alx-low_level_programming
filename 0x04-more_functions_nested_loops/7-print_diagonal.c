@@ -6,11 +6,22 @@
 
 void print_diagonal(int n)
 {
-	for (; n >= 1; n--)
-	{
-	if (n <= 0)
-	_putchar('\n');
-	_putchar(92);
-	_putchar('\n');
-	}
+int H, K;
+
+if (n <= 0)
+{
+_putchar('\n');
+}
+else
+{
+for (H = 1; H <= n; H++)
+{
+for (K = 1; K <= H; K++)
+{
+_putchar(' ');
+_putchar(92);
+_putchar('\n');
+}
+}
+}
 }
