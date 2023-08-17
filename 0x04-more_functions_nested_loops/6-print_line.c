@@ -7,7 +7,7 @@
 
 void print_line(int n)
 {
-for (; n > 0; n--)
+for (; n >= 1; n--)
 putchar('_');
 putchar('\n');
 if (n <= 0)
