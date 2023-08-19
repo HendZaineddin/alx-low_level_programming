@@ -12,8 +12,6 @@ int main(void)
 {
 	int num;
 
-	num = 100;
-
 	for (num = 1; num <= 100; num++)
 	{
 		if (num % 5 == 0 && num % 3 == 0)
