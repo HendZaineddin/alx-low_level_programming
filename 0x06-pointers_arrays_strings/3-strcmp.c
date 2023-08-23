@@ -8,5 +8,9 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	return (s1[0] - s2[0]);
+	int result;
+
+	result = s1[0] - s2[0];
+
+	return (result);
 }
