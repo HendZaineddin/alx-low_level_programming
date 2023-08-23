@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * *_strncpy -  a function that copies a string from *src to *dest.
- * *dset: string hold copied charchters.
- * *src: a copied string.
+ * *_strncpy -  a function that copies a string from @*src to @*dest.
+ * @*dset: string hold copied charchters.
+ * @*src: a copied string.
  * @n: numbers of characters of the string src.
  * Return: dest.
  */
