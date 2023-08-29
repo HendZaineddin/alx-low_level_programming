@@ -13,7 +13,7 @@ int i, m;
 
 for (i = 0; haystack[i] != '\0'; i++)
 
-for (m = 0; (haystack[i] == needle[m]) && needle[m] != '\0'; m++)
+for (m = 0; needle[m] != '\0'; m++)
 if (haystack[i] != needle[m])
 {
 	break;
