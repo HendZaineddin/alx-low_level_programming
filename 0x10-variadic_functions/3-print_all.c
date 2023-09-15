@@ -8,8 +8,8 @@ void print_all(const char * const format, ...)
 {
 	int k = 0;
 	char *s;
-	va_list p;
 	int Comma;
+	va_list p;
 
 	va_start(p, format);
 	while (format[k] != '\0' && format != NULL)
@@ -37,6 +37,7 @@ void print_all(const char * const format, ...)
 			break;
 			default:
 			Comma = 0;
+			break;
 		}
 		if (format[k + 1] != '\0' && Comma == 1)
 			printf(", ");
