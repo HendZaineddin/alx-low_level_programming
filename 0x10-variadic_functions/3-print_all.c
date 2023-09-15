@@ -7,42 +7,39 @@
 void print_all(const char * const format, ...)
 {
 	int k = 0;
-	char c;
-	int i;
-	float f;
 	char *s;
 	va_list p;
+	int Comma;
 
 	va_start(p, format);
-	while (format[k] != '\0')
+	while (format[k] != '\0' && format != NULL)
 	{
-		if (format[k] == 'c')
+		switch (format[k])
 		{
-			c = va_arg(p, int);
-			printf("%c", c);
-		}
-		else if (format[k] == 'i')
-		{
-			i = va_arg(p, int);
-			printf("%d", i);
-		}
-		else if (format[k] == 'f')
-		{
-			f = va_arg(p, double);
-			printf("%f", f);
-		}
-		else if (format[k] == 's')
-		{
+		case 'c':
+			printf("%c", va_arg(p, int));
+			Comma = 1;
+			break;
+		case 'i':
+			printf("%d", va_arg(p, int));
+			Comma = 1;
+			break;
+		case 'f':
+			printf("%f", va_arg(p, double));
+			Comma = 1;
+			break;
+		case 's':
 			s = va_arg(p, char *);
 			if (s == NULL)
-			{
-				printf("%s", "(nil)");
-			}
-			else
-			{
-			 printf("%s", s);
-			}
+			printf("%s", "(nil)");
+			printf("%s", s);
+			Comma = 1;
+			break;
+			default:
+			Comma = 0;
 		}
+		if (format[k + 1] != '\0' && Comma == 1)
+			printf(", ");
 		k++;
 	}
 	va_end(p);
