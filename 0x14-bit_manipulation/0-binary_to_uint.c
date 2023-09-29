@@ -16,14 +16,14 @@ unsigned int binary_to_uint(const char *b)
 			if (b[i] == '1' || b[i] == '0')
 			{
 				m = (b[i] - '0');
-				k = k<<1 | m;
+				k = k << 1 | m;
 			}
 			else
 			{
 				return (0);
 			}
 		}
-	
+
 		return (k);
 	}
 	else
