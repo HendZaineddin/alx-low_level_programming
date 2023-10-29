@@ -7,7 +7,7 @@
  */
 int pwer( int i)
 {
-        int num;
+        int num = 1;
 
         if (i == 0)
                 num = 1;
