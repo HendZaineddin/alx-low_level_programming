@@ -5,6 +5,21 @@
  *@b: pointer to string.
  *Return: 0 or dec.
  */
+
+int pwer(int i)
+{
+	int num = 1;
+
+	if (i == 0)
+		num = 1;
+	else
+		while (i >= 1)
+		{
+			num *= 2;
+			i--;
+		}
+	return (num);
+}
 unsigned int binary_to_uint(const char *b)
 {
 	int i = 0, j, dec = 0;
