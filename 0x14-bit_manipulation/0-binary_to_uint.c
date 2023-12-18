@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  *binary_to_uint -  a function that converts a binary number to an integer.
- *@b - pointer to string.
+ *@b: pointer to string.
  *Return: 0 or dec.
  */
 unsigned int binary_to_uint(const char *b)
